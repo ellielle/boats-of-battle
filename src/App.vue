@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Gameboard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Gameboard from "./components/Gameboard.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { Gameboard },
+  name: "App",
+};
 </script>
 
 <style lang="scss">
+@use "./assets/variables.css";
+body {
+  margin: 0;
+}
+
 #app {
+  width: 100vw;
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: var(--main-background);
 }
 </style>

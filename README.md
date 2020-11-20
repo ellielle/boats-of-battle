@@ -1,29 +1,3 @@
-# boats-of-battle
+# Boats of Battle
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Boats of Battle is my take on the Battleship project from [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/battleship) using Vuejs 3 and the new Composition API.
