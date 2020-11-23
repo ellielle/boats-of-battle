@@ -1,5 +1,7 @@
 <template>
-  <Gameboard />
+  <div>
+    <Gameboard />
+  </div>
 </template>
 
 <script>
@@ -23,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: beige;
   background-color: var(--main-background);
 }
 </style>

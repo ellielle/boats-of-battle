@@ -1,16 +1,25 @@
 <template>
-  <div id="container-gameboard"></div>
+  <div id="container-gameboard">
+    <div v-for="ship in shipArray" :key="ship.id" data-test="player-ship">
+      {{ ship }}
+      <button @click="fireAtLocation({ ship: ship, hitLocation: 1 })">
+        Fire!
+      </button>
+    </div>
+  </div>
 </template>
 
 <script>
-// import { ref } from "vue";
-import { buildShips } from "@/composables/shipFactory";
+import { initializeShips } from "@/composables/shipFactory";
 export default {
   name: "Gameboard",
   setup() {
-    const test = buildShips();
-    console.log(test);
-    return {};
+    const { shipArray, buildShips } = initializeShips();
+    buildShips();
+    function fireAtLocation({ship, hitLocation}) {
+      shipArray[ship.id].hit(hitLocation);
+    }
+    return { shipArray, fireAtLocation };
   },
 };
 </script>
