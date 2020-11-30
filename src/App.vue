@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-app">
     <Gameboard />
   </div>
 </template>
@@ -27,5 +27,9 @@ body {
   text-align: center;
   color: beige;
   background-color: var(--main-background);
+}
+
+.container-app {
+  padding-top: 30px;
 }
 </style>
